@@ -320,9 +320,14 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Tevo Black Widow - derived by Simons
-   #define  DEFAULT_Kp 22.02
-   #define  DEFAULT_Ki 2.12
-   #define  DEFAULT_Kd 52.16
+  // #define  DEFAULT_Kp 22.02
+  // #define  DEFAULT_Ki 2.12
+  // #define  DEFAULT_Kd 52.16
+
+  // Tevo BW e3d v6 - fan at 50%
+  #define  DEFAULT_Kp 51.47
+  #define  DEFAULT_Ki 9.69
+  #define  DEFAULT_Kd 68.30
 
   // Ultimaker
   //#define  DEFAULT_Kp 22.2
@@ -503,7 +508,8 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 500 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,3200,935}  // Tevo Black Widow with stock extruder
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,3200,935}  // Tevo Black Widow with stock extruder
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,3200,837}  // Tevo Black Widow with titan extruder
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -716,7 +722,7 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
-#define INVERT_Y_DIR true
+#define INVERT_Y_DIR false
 #define INVERT_Z_DIR true
 
 // @section extruder
