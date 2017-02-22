@@ -137,6 +137,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
+#define TEVO_BLTOUCH
 #ifdef TEVO_BLTOUCH
   #define CUSTOM_MACHINE_NAME "Black Widow BLT"
 #else
@@ -846,9 +847,9 @@
 
   // Set the boundaries for probing (where the probe can reach).
   #define LEFT_PROBE_BED_POSITION 50 // adjusted for the Tevo Black Widow
-  #define RIGHT_PROBE_BED_POSITION 350
+  #define RIGHT_PROBE_BED_POSITION 250
   #define FRONT_PROBE_BED_POSITION 30
-  #define BACK_PROBE_BED_POSITION 220
+  #define BACK_PROBE_BED_POSITION 170
 
   // The Z probe minimum outer margin (to validate G29 parameters).
   #define MIN_PROBE_EDGE 10
